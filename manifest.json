@@ -1,3 +1,23 @@
+// 팝업 익스텐션
+// {
+//     "manifest_version": 2,
+     
+//     "name": "Hello_World",
+//     "description": "Print Hello, World! message",
+//     "version": "1.0",
+     
+//     "browser_action": {
+//         "default_icon": "icon.png",
+//         "default_popup": "popup.html"
+//     },
+//     "permissions": [
+//         "activeTab",
+//         "<all_urls>"
+//     ]
+// }
+
+
+// 뉴탭 익스텐션
 {
     "manifest_version": 2,
      
@@ -5,10 +25,15 @@
     "description": "Print Hello, World! message",
     "version": "1.0",
      
-    "browser_action": {
-        "default_icon": "cookie.png",
-        "default_popup": "popup.html"
+    // "browser_action": {
+    //     "default_icon": "icon.png",
+    //     "default_popup": "newtab.html"
+    // },
+    "author" : "Deep Wide Studio",
+    "chrome_url_overrides":{
+        "newtab": "newtab.html"
     },
+
     "permissions": [
         "activeTab",
         "<all_urls>"
